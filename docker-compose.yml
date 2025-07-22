@@ -1,6 +1,6 @@
 services:
   minecraft_scraper:
-    build: .
+    image: ghcr.io/maggobyte/minecraft-scraper:latest
     restart: unless-stopped
     environment:
       MC_HOST: "localhost"
