@@ -1,0 +1,37 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# MacOS & Linux hidden files
+.DS_Store
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Docker artifacts
+*.tar
+*.gz
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# Python test cache
+.pytest_cache/
+.tox/
+coverage/
+
+# Git-specific
+*.orig
+
+# Optional: data folder (if generated)
+data/
