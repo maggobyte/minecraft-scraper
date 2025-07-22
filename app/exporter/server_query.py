@@ -21,7 +21,8 @@ class MinecraftQuerier:
                 "version": status.version.name,
                 "motd": motd,
             }
-        except Exception:
+        except Exception as e:
+            print(f"[Error] Failed to query server: {e}")
             return {
                 "online": False,
                 "latency": 0,
