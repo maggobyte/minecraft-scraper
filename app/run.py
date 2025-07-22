@@ -1,5 +1,6 @@
 import os
 from exporter.exporter import MinecraftExporter
+from mcstatus import JavaServer
 
 host = os.getenv("MC_HOST", "localhost")
 port = int(os.getenv("MC_PORT", 25565))
