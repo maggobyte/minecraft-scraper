@@ -1,5 +1,5 @@
 services:
-  minecraft_exporter:
+  minecraft_scraper:
     build: .
     restart: unless-stopped
     environment:
