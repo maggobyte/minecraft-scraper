@@ -1,6 +1,7 @@
 services:
   minecraft_exporter:
     build: .
+    restart: unless-stopped
     environment:
       MC_HOST: "localhost"
       MC_PORT: "25565"
