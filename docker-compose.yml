@@ -1,0 +1,9 @@
+services:
+  minecraft_exporter:
+    build: .
+    environment:
+      MC_HOST: "localhost"
+      MC_PORT: "25565"
+      MC_INTERVAL: "30"
+    ports:
+      - "8000:8000"

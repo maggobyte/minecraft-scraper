@@ -4,7 +4,7 @@ from exporter.server_query import MinecraftQuerier
 import exporter.metrics as metrics
 
 class MinecraftExporter:
-    def __init__(self, host, port=25565, interval=10):
+    def __init__(self, host, port=25565, interval=30):
         self.querier = MinecraftQuerier(host, port)
         self.interval = interval
     
