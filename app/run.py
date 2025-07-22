@@ -1,13 +1,11 @@
 import os
+import time
 from exporter.exporter import MinecraftExporter
 from mcstatus import JavaServer
 
 host = os.getenv("MC_HOST", "localhost")
 port = int(os.getenv("MC_PORT", 25565))
 interval = int(os.getenv("MC_INTERVAL", 30))
-
-exporter = MinecraftExporter("localhost", 25565, interval=30)
-exporter.run()
 
 retries = 10
 for attempt in range(1, retries +1):
@@ -23,3 +21,6 @@ for attempt in range(1, retries +1):
 else:
     print(f"Failed to connect to the server after {retries} attempts.")
     exit(1)
+
+exporter = MinecraftExporter(host, port, interval)
+exporter.run()
