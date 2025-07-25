@@ -1,7 +1,8 @@
-## Minecraft Exporter for Prometheus
+# Minecraft Exporter for Prometheus
 
 A lightweight Prometheus exporter that collects metrics from a Minecraft server using [mcstatus](https://github.com/py-mine/mcstatus).
 
+Supported metrics are player count, latency and server online status.
 
 ## 🔧 Docker compose usage
 
@@ -19,6 +20,7 @@ services:
 ```
 
 ## 🔧 Prometheus Config Example
+
 ```yaml
 scrape_configs:
   - job_name: 'minecraft'
